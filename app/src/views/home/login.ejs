@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src = "/js/home/login.js"></script>
+    <!--login.js의 console.log가 먼저 실행되는 경우를 방지하기 위해 defer를 선언함.-->
+    <script src = "/js/home/login.js" defer ></script>
     <title>Document</title>
 </head>
 <body>
-    <input type="text" placeholder = "id">
-    <input type="text" placeholder = "password">
-    <button>login</button> 
+    <input id = "id" type="text" placeholder = "id">
+    <input id = "pw" type="text" placeholder = "password">
+    <button id = "loginbtn">login</button> 
 </body>
 </html>
