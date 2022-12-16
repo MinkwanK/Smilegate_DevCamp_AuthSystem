@@ -227,6 +227,7 @@
     "mocha": "^10.2.0"
   },
   "scripts": {
+    "start": "node ./bin/www.js",
     "test": "mocha"
   },
   "keywords": [],
