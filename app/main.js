@@ -1,3 +1,5 @@
+//---------노드라는 기본 서버의 설정을 모아놨습니다. ---------
+
 //express는 웹 애플리케이션 개발하는데 가장 많이 사용되는 웹 애플리케이션 프레임워크
 const express = require('express');
 const app = express();
