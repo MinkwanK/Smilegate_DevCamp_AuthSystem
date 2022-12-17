@@ -12,6 +12,13 @@ function login(){
         pw : pw.value, 
     };
 
-    fetch();
+    fetch("/login",{ //bodyparser 덕분에 문자열로 변환된 bodydata가 다시 객체화되서 백엔드로 넘겨짐
+        method: "POST",
+        headers:{
+            "Content-Type":"application/json",
+        },
+        body: JSON.stringify(req),
+    }).then(res.json)
+    .then( (res) => console.log(res));
 }
 
