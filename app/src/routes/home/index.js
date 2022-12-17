@@ -10,8 +10,8 @@ const ctrl = require("./home.ctrl")
 
 //라우팅은 클라이언트가 url로 접근하는 경로에 따라 서버가 그에 맞는 동작 실행
 router.get('/',ctrl.output.home);
-
 router.get('/login',ctrl.output.login);
+router.get('/register',ctrl.output.register);
 router.post('/login',ctrl.process.login);
 
 module.exports = router;
