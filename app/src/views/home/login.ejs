@@ -5,12 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--login.js의 console.log가 먼저 실행되는 경우를 방지하기 위해 defer를 선언함.-->
+    <link rel="stylesheet" href="/css/home/login.css">
     <script src = "/js/home/login.js" defer ></script>
     <title>Document</title>
 </head>
 <body>
-    <input id = "id" type="text" placeholder = "id">
-    <input id = "pw" type="text" placeholder = "password">
-    <button id = "loginbtn">login</button> 
+    <div class="login-page">
+        <div class="form">
+          <form class="login-form">
+            <input id = "id" type="text" placeholder="ID"/>
+            <input pw = "pw" type ="password" placeholder="Password"/>
+            <button>login</button>
+            <p class="message">Not registered? <a href="/register">Create an account</a></p>
+          </form>
+        </div>
+      </div>
+      
+      </body>
 </body>
 </html>
