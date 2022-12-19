@@ -7,6 +7,7 @@ class UserStorage{
         id : ["user"],
         pw : ["1234"],
         name : ["nickname"],
+        email: ["abc@abc.com"]
         
     };
   
@@ -39,6 +40,16 @@ class UserStorage{
             return newUser;
         },{});
         return userInfo;
+    }
+
+    static save(userInfo){
+        const users = this.#users;
+        users.id.push(userInfo.id);
+        users.name.push(userInfo.name);
+        users.pw.push(userInfo.pw);
+        users.email.push(userInfo.email);
+        console.log(users);
+
     }
     
 }
