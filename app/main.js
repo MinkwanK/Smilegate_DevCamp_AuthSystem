@@ -3,8 +3,9 @@
 //express는 웹 애플리케이션 개발하는데 가장 많이 사용되는 웹 애플리케이션 프레임워크
 const express = require('express');
 const app = express();
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
 const PORT = 8080;
+
 //const ip = require('ip');
 //라우팅
 const home = require("./src/routes/home")
