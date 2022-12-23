@@ -24,11 +24,22 @@ function login(){
         .then((res) => res.json())
         .then((res)=>{
         if (res.success) {
-            location.href = "/";
+            if(res.admin)
+            {
+                console.log("관리 페이지 이동");
+                location.href = "/admin";
+           
         }
-             else{
+            else
+            {
+                console.log("일반 페이지 이동");
+                location.href = "/";
+            }
+        }
+     
+        else(res.success == false)
                 alert(res.msg);
-             }        
+                  
     })
     .catch((err)=>{
         console.error("로그인 중 에러 발생!" + err);

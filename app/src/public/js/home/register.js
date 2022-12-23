@@ -12,7 +12,10 @@ registbtn.addEventListener("click",register);
 function register(){    
     
     if(!id.value ) return alert("아이디를 입력해주세요.");
-    if(pw !== confirmPw.value) return (alert("비밀번호가 일치하지 않습니다"));
+    if(!name.value) return alert("이름을 입력해주세요.");
+    if(!email.value) return alert("이메일을 입력해주세요.");
+    if(pw.value !== confirmPw.value) return (alert("비밀번호가 일치하지 않습니다"));
+ 
     
     const req = {
         id : id.value,
@@ -34,6 +37,7 @@ function register(){
         .then((res) => res.json()) //promise 객체 반환
         .then((res)=>{ 
         if (res.success) {
+            alert("회원가입 성공!")
             location.href = "/login";
         }
              else{
