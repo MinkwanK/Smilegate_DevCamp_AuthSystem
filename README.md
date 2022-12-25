@@ -3,7 +3,7 @@
 ## 인증 시스템 
 ![image](https://user-images.githubusercontent.com/94276637/209356162-85bfadee-c942-4e75-80c3-b92003724362.png)
 ### 개요<br>
-웹서버를 구축하고, mvc 패턴으로 최적화된 폴더 구조를 이루었다. mysql과의 연동을 통해 로그인과 회원가입,비밀번호 암호화를 구현하였습니다.
+웹서버를 구축하고, mvc 패턴으로 최적화된 폴더 구조를 이루었습니다. mysql과의 연동을 통해 로그인과 회원가입,비밀번호 암호화를 구현하였습니다.
 
 ### 기술스택<br>
 Node.js, MySQL, Java Script
